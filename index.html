@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal portfolio">
+    <meta name="author" content="Yovani Martinez">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S2YRDRYFWZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S2YRDRYFWZ');
+</script>
+
+
+
+  <!-- TailwindCSS CDN recomendado -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN recomendado -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="ScYsKYLqRg-5Vd81A_kg8";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+  </head>
+  <body>
+     <div class="min-h-screen flex flex-col md:flex-row">
+    <!-- Lado Izquierdo -->
+    <div class="w-full md:w-1/3 bg-white flex flex-col items-center justify-center p-8">
+      <div class="mb-6">
+        <!-- Espacio para avatar o logo -->
+        <img src="/ymportfolio/assets/avatar-BWKltWXI.jpg" alt="Avatar" class="w-24 h-24 rounded-full object-cover border-4 border-gray-200 shadow-lg">
+      </div>
+      <p class="text-gray-600 text-center mb-8">
+        Nuestro sitio web está en construcción, ¡pero estamos listos para comenzar! ¿Quieres saber más sobre nosotros, contarnos tu proyecto o simplemente saludarnos? Envíanos un mensaje y te responderemos lo antes posible.
+      </p>
+      <div class="flex space-x-4">
+        <!-- Íconos sociales -->
+        <a href="#" class="text-pink-600 hover:text-pink-800 text-2xl">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-pink-600 hover:text-pink-800 text-2xl">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-pink-600 hover:text-pink-800 text-2xl">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Lado Derecho -->
+    <div class="w-full md:w-2/3 flex items-center justify-center bg-cover bg-center relative" style="background-image: url('/ymportfolio/assets/fondo-D56CG1Qt.jpg');">
+      <div class="bg-black bg-opacity-60 w-full h-full absolute top-0 left-0"></div>
+      <div class="relative z-10 text-center w-full px-6">
+        <h2 class="text-white text-lg mb-2">Sitio en Construccion</h2>
+        <h1 class="text-white text-5xl md:text-7xl font-bold mb-4 tracking-wide">PRÓXIMAMENTE</h1>
+        <p class="text-white text-xl mb-8">¡Trabajamos arduamente para brindarle la mejor experiencia!</p>
+        <button id="notifyBtn" class="bg-pink-600 hover:bg-pink-700 text-white font-bold px-8 py-3 rounded-lg transition duration-300">
+          Notificarme
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('#notifyBtn').on('click', function() {
+      alert('¡Te notificaremos cuando el sitio esté listo!');
+    });
+  </script>
+  </body>
+</html>
