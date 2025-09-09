@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Yovani Martinez">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Personal Portfolio</title>
+
+
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+       <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+       <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+ 
+      
+      <script src="assets/js/index.js"></script>
+      
+      
+      
+    <style>
+        
+        .header{
+        
+background: rgba(10,0,55,0.94);
+background: -moz-linear-gradient(left, rgba(10,0,55,0.94) 0%, rgba(52,0,95,0.96) 35%, rgba(52,1,96,0.97) 50%, rgba(26,0,70,0.99) 84%, rgba(0,0,38,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(10,0,55,0.94)), color-stop(35%, rgba(52,0,95,0.96)), color-stop(50%, rgba(52,1,96,0.97)), color-stop(84%, rgba(26,0,70,0.99)), color-stop(100%, rgba(0,0,38,1)));
+background: -webkit-linear-gradient(left, rgba(10,0,55,0.94) 0%, rgba(52,0,95,0.96) 35%, rgba(52,1,96,0.97) 50%, rgba(26,0,70,0.99) 84%, rgba(0,0,38,1) 100%);
+background: -o-linear-gradient(left, rgba(10,0,55,0.94) 0%, rgba(52,0,95,0.96) 35%, rgba(52,1,96,0.97) 50%, rgba(26,0,70,0.99) 84%, rgba(0,0,38,1) 100%);
+background: -ms-linear-gradient(left, rgba(10,0,55,0.94) 0%, rgba(52,0,95,0.96) 35%, rgba(52,1,96,0.97) 50%, rgba(26,0,70,0.99) 84%, rgba(0,0,38,1) 100%);
+background: linear-gradient(to right, rgba(10,0,55,0.94) 0%, rgba(52,0,95,0.96) 35%, rgba(52,1,96,0.97) 50%, rgba(26,0,70,0.99) 84%, rgba(0,0,38,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0037', endColorstr='#000026', GradientType=1 );
+position: fixed !important;
+z-index:1199;
+top: 0;
+}
+        nav {
+                width:100%;
+        }
+        
+        body {
+            background-color: #2b0056;
+        }
+        
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+        
+        
+     
+        
+        
+    </style>
+
+    
+  </head>
+  <body>
+      
+      <div id="dialog" title="Basic dialog">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+ 
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header ">
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+            </li>
+                <li class="nav-item">
+              <a class="nav-link text-white " href="#work">Work</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link text-white " href="#about">About</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#projects" tabindex="-1" aria-disabled="true">Projects</a>
+            </li>
+              
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+          </ul>
+           
+        </div>
+      </div>
+    </nav>
+      
+ 
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+       
+        <h1 class="fw-light text-white">Hi, I'm Yovani!</h1>
+        <p class="lead   text-white ">a Full Stack Web Developer. <br> with 10 years experience  
+            nice to meet you
+            </p>
+    
+      </div>
+    </div>
+  </section>
+ <section width="100%" class="  text-center flex" style="
+                                                              
+        width: 100%;
+    padding: 150px 40px 65px;
+    float: left;
+    background-image: url(assets/images/gradient.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;                                                      
+                      ">
+    <div class="row py-lg-5" id="work">
+           <h1 class="fw-light text-white" style="letter-spacing: 10px;">WORK  EXPERIENCE</h1>
+      <div class="col-lg-12 col-md-12  ">
+          
+      <div class="row row-cols-1 row-cols-md-3 g-4" style="width: 100%">
+  <div class="col">
+    <div class="card h-100">
+        <a href="https://www.tigo.com.pa/" target="_blank">
+      <img style="width: 100px; margin: 0 auto;" src="assets/images/tigologo.png" class="card-img-top rounded-3 mt-5" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title">Tigo Panama</h5>
+        <p class="card-text">Develop billing software solutions for ISP and digital services <br >Web project development in PHP, JavaScript, and Laravel.<br>
+Utilization of Oracle database.<br>
+Management and execution of IT projects.<br></p>
+      </div>
+     
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+        <a href="https://asegurancon.com/" target="_blank">
+      <img  style="width: 100px; margin: 0 auto;" src="assets/images/anconlogo.png" class="card-img-top rounded-3 mt-5" alt="..."> </a>
+      <div class="card-body">
+        <h5 class="card-title">Aseguradora Ancon</h5>
+        <p class="card-text">Web project development in PHP and JavaScript.<br>
+Usage of SQL, Mysql databases and SOAP services<br>
+API PHP integration for card payment portal and internal management software.<br></p>
+      </div>
+    
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100  ">
+        <a href="https://www.modop.com/" target="_blank">
+            <img style="width: 100px; margin: 0 auto;" src="assets/images/modoplogo.png" class="card-img-top rounded-3 mt-5" alt="..." ></a>
+      <div class="card-body">
+        <h5 class="card-title">Modop modus operandi</h5>
+        <p class="card-text">Web project development in PHP, JavaScript, and Wordpress Cms.<br>
+Implementation of responsive web pages.<br>
+Technical support and updates to websites.<br></p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+      
+      </div>
+    </div>
+  </section>
+   <section width="100%" class="py-5 text-center flex"    style="
+                                                              
+        width: 100%;
+    padding: 150px 40px 65px;
+    float: left;
+    background-image: url(assets/images/banner1.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;                                                      
+                      ">
+    <div class="row py-lg-5" id="about">
+           <h1 class="fw-light text-white">A B O U T</h1>
+      <div class="col-lg-6 col-md-8 mx-auto">
+            <img  style="width: 250px"   src="assets/images/ymcv2.png" class="card-img-top " alt="...">
+
+     
+          <p class="lead   text-white "> Full Name: Yovani Martinez </p> 
+          <p class="lead   text-white ">Nacionality: Panamanian </p> 
+           <p class="lead   text-white "> Date of Bird: 01/10/1982 </p> 
+           <p class="lead   text-white "> Languages: <br>Spanish : Native <br> English : Beginner </p> 
+         <hr> 
+          
+          <p class="lead   text-white "> <b> Education:</b> </p>
+          <p class="lead   text-white "> licenciature on informatics system  </p>
+          <p class="lead   text-white "> Electronics Bachelor.</p>
+ 
+ <hr>
+          <p  class="  lead text-white "><b> Technologies and Skills: </b><br>
+              
+              
+              <p  class="  lead text-white ">  Programming Languages: <br>
+           
+              Php , Js , Jquery , Vue
+              <br>
+              <img src="https://skillicons.dev/icons?i=php,js,jquery,vue" class="g-0"/>  
+              <br><br>
+              Frameworks: Laravel (PHP) <br>
+              <img src="https://skillicons.dev/icons?i=laravel " />
+              <br>
+              Databases: Oracle, SQL, Informix, Sybase. <br>
+              <img src="https://skillicons.dev/icons?i=mysql" /><br>
+              <br>
+              CSS/JS Frameworks: Bootstrap, Foundation. <br>
+              <img src="https://skillicons.dev/icons?i=bootstrap " /><br>
+              
+              <br>
+              CMS: Wordpress (theme and plugin development). <br>
+              <img src="https://skillicons.dev/icons?i=wordpress" />  <br>
+              
+              <br>
+              Version Control Tools: Git. <br>
+              <img src="https://skillicons.dev/icons?i=git,gitlab" />   <br>
+              
+              <br>
+              Project and Issue Tracking Methodologies: Atlassian (likely Jira). 
+              
+              
+              <br>
+              
+              Responsive Web Development: Implementing responsive web pages for mobile devices. 
+              <br>
+              Graphic Design Tools: Photoshop (image processing). 
+               <img src="https://skillicons.dev/icons?i=photoshop" />  
+              
+              <br>
+              
+         </p>
+          
+                <p class="lead   text-white ">     Others: Providing support to clients for Wordpress websites.  Experience in client technical support, website updates.</p>
+        
+      </div>
+    </div>
+  </section>
+    
+    </section>
+    
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5" id="projects">
+           <h1 class="fw-light text-white">P R O J E C T S</h1>
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    
+
+ <div class="col">
+          <div class="card shadow-sm">
+        
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./assets/images/decimotercermes.png" alt="Card image cap" style="max- 
+ width: 40px;">
+            <div class="card-body">
+              <p class="card-text"> Thirteenth month paymenth calculator</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="https://yo4123.github.io/decimo-tercer-mes/" target="_blank">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+               <a href="https://github.com/yo4123/decimo-tercer-mes" target="_blank"> 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">git</button></a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+<div class="col">
+          <div class="card shadow-sm">
+		     <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./assets/images/cropidtopdf.png" alt="Card image cap" style=" ">
+            
+            <div class="card-body">
+              <p class="card-text">
+CropIdToPDF is a web application that allows users to crop ID card images and convert them into a PDF file using JavaScript and the jsPDF library.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+			    <a href="https://yo4123.github.io/CropIdtopdf/" target="_blank">
+				  <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+				   <a href="https://github.com/yo4123/CropIdtopdf" target="_blank"> 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">git</button></a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+			  
+            </div>
+          </div>
+        </div>
+
+
+       
+        <div class="col">
+          <div class="card shadow-sm">
+	       <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./assets/images/imgtopdf.png" alt="Card image cap" style=" ">
+		 
+            <div class="card-body">
+              <p class="card-text">This project is a web tool that allows you to convert images to PDF files easily and quickly. Simply select the images you want to convert, and the application will generate a PDF file containing them.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+			    <a href="https://yo4123.github.io/imagetopdf/" target="_blank">
+				  <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+				   <a href="https://github.com/yo4123/imagetopdf" target="_blank"> 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">git</button></a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!-- rows 2 -->
+		
+
+
+ 
+
+
+
+ <div class="col">
+          <div class="card shadow-sm">
+	       <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./assets/images/dt-generator.png" alt="Card image cap" style=" ">
+		 
+            <div class="card-body">
+              <p class="card-text">This project is a web tool that allows you to made page with a datable plugin and quickly. Simply fill the form with you info , and press download button , the application will generate a zip file containing all files to run in a php server</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+			    <a href="https://yo4123.github.io/scd-dt-generator/" target="_blank">
+				  <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+				   <a href="https://github.com/yo4123/scd-dt-generator" target="_blank"> 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">git</button></a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+ <div class="col">
+          <div class="card shadow-sm">
+	       <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./assets/images/textencrypter.png" alt="Card image cap" style=" ">
+		 
+            <div class="card-body">
+              <p class="card-text">Text encrypt and decrypt tool ,Protect your information with character string based on base64, sha256, AES encryption. Work in php</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+			    <a href="https://yomartinez.my.id/textencrypter" target="_blank">
+				  <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+				   <a href="https://github.com/yo4123/textencrypter" target="_blank"> 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">git</button></a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+       
+        <div class="col">
+          <div class="card shadow-sm">
+             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="./assets/images/info-rutas.png" alt="Card image cap" style=" ">
+		 
+            
+            <div class="card-body">
+              <p class="card-text">The application consists of a delivery route information system based on  ( Node.js , React ,Postgres ) ,  in which the user can view the routes in the system, edit route information, and create new routes from data synchronized from an external service.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+			    <a href="https://yo4123.github.io/inforutas/" target="_blank">
+				  <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+				   <a href="https://github.com/yo4123/inforutas.git" target="_blank"> 
+                  <button type="button" class="btn btn-sm btn-outline-secondary">git</button></a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+ 
+      </div>
+    </div>
+  </div>
+              </div>
+  </section>
+    
+    <div id="processing" class="dataTables_processing" style="display: none;z-index: 9999; text-align:center;width:100%"><img style="position:absolute;" src="assets/images/spinner.gif"></div>
+     <section width="100%" class="py-5 text-center flex" style="
+                                                              
+        width: 100%;
+    padding: 150px 40px 65px;
+    float: left;
+    background-image: url(assets/images/banner2.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;                                                      
+                      ">
+    <div class="row py-lg-5" id="contact">
+           <h1 class="fw-light text-white">C O N T A C T</h1>
+      <div class="col-lg-6 col-md-12  " style="width: 100%">
+            <!-- CTFORM -->
+          
+<div class="container"  >
+	<div class="row  "  style=" " class="contact" >
+        
+		<div class="col-md-3 col-lg-6">
+			<div class="contact-info">
+				<img src="assets/images/mail.png" alt="image"/>
+				<h2>Contact Us</h2>
+				<h4>I love hearing from you!</h4>
+			</div>
+		</div>
+		<div class="col-md-9 col-lg-6">
+            <form method="post" action="#" onsubmit="return sendmail(event);" id="form1" >
+			<div class="contact-form">
+				<div class="form-group">
+			 <label class="col-sm-2 text-left" for="fname" style="width:100% ; text-align: left">Full Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+				  </div>
+				</div>
+ 
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email" style="width:100% ; text-align: left">Email: *optional</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="comment" style="width:100% ; text-align: left">Comment:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5" id="comment" name="comment" required></textarea>
+				  </div>
+				</div>
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default btn btn-primary mt-3" style="width:100% ; text-align: left" onclick="sendmail(this.id)">Submit</button>
+                       
+                      
+				  </div>
+				</div>
+			</div>
+            </form>
+		</div>
+	</div>
+</div>
+            <!-- CTFORM -->
+      </div>
+    </div>
+  </section>
+    
+    
+</main>
+
+<footer class="text-body-secondary py-5 ">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1 text-white">This Portfolio is based in &copy; Bootstrap,  </p>
+    <p class="mb-0 text-white">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
